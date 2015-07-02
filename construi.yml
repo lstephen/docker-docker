@@ -1,0 +1,7 @@
+build: latest
+privileged: true
+
+targets:
+  build:
+    - docker ps
+    - docker build latest/
