@@ -1,4 +1,4 @@
-build: target/
+build: latest
 privileged: true
 
 targets:
