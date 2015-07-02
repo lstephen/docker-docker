@@ -3,3 +3,4 @@ privileged: true
 
 targets:
   build: docker build latest/
+
