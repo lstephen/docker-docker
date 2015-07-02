@@ -2,5 +2,11 @@ build: latest
 privileged: true
 
 targets:
-  build: docker build latest/
+  build:
+    - docker build latest/
+
+  release:
+    files:
+      - $GIT_SSH_KEY:/root/.ssh/id_rsa:0600
+    run: bash construi/release/script.sh
 
