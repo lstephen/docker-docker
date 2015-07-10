@@ -6,6 +6,8 @@ targets:
     - docker build latest/
 
   release:
+    image: ubuntu:latest
+    privileged: false
     files:
       - $GIT_SSH_KEY:/root/.ssh/id_rsa:0600
     run: bash construi/release/script.sh
