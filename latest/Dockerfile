@@ -3,7 +3,7 @@ MAINTAINER levi.stephen@gmail.com
 
 RUN apt-get update && apt-get install -y curl
 
-RUN curl -sSL https://get.docker.com/ubuntu/ | sh
+RUN curl -sSL https://get.docker.com/ | sh
 
 ADD ./wrapdocker /usr/local/bin/wrapdocker
 RUN chmod +x /usr/local/bin/wrapdocker
